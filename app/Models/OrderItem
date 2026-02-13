@@ -1,0 +1,21 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Contracts\Support\Arrayable;
+
+class OrderItem implements Arrayable
+{
+
+    public function __construct(
+        public string $productId,
+        public string $name,
+        public int $quantity,
+        public float $unitPrice,
+    ) {}
+
+    public function toArray(): array
+    {
+        return get_object_vars($this);
+    }
+}
