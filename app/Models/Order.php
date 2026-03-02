@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use MongoDB\Laravel\Eloquent\Model;
+use App\Enums\OrderedStatus;
 use Illuminate\Support\Collection;
 
 class Order extends Model
@@ -19,7 +20,7 @@ class Order extends Model
 
     protected $casts = [
         'totalAmount' => 'decimal:2',
-        'orderedStatus' => 'string', 
+        'orderedStatus' =>  OrderedStatus::class, 
         'orderedItems' => 'array',  
     ];
 

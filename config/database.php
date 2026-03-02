@@ -35,7 +35,7 @@ return [
             'driver' => 'mongodb',
             'host' => env('DB_HOST', '127.0.0.1'),
             'port' => env('DB_PORT', 27017),
-            'database' => env('DB_DATABASE', 'ecommerce_db'),
+            'database' => env('DB_DATABASE', 'my_ecommerce_db'),
             'username' => env('DB_USERNAME', ''),
             'password' => env('DB_PASSWORD', ''),
             'options' => [
