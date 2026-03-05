@@ -34,5 +34,11 @@ return [
             'channel' => env('SLACK_BOT_USER_DEFAULT_CHANNEL'),
         ],
     ],
+    
+    'paystack' => [
+    'base_url' => env('PAYSTACK_BASE_URL', 'https://api.paystack.co'),
+    'secret_key' => env('PAYSTACK_SECRET_KEY'),
+],
+
 
 ];
